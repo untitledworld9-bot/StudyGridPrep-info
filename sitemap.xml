@@ -4,29 +4,29 @@
   <url>
     <loc>https://studygridprep.info/</loc>
     <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://studygridprep.info/jee-preparation-2027.html</loc>
     <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://studygridprep.info/neet-preparation-guide.html</loc>
     <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://studygridprep.info/cuet-preparation-guide.html</loc>
     <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
