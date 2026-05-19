@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Absolute path to your sitemap file
+Sitemap: https://studygridprep.info/sitemap.xml
