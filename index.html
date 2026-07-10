@@ -338,7 +338,7 @@ body {
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   background: var(--primary-light);
   color: var(--primary);
   font-family: var(--font);
@@ -350,6 +350,19 @@ body {
   border: 1px solid rgba(79,70,229,0.18);
   letter-spacing: 0.3px;
   text-transform: uppercase;
+}
+.hero-badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  animation: badgePulse 1.8s ease-in-out infinite;
+}
+@keyframes badgePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.18); opacity: 0.7; }
 }
 .hero h1 {
   font-family: var(--font);
@@ -1409,8 +1422,6 @@ footer {
 
   <div class="aurora-base"></div>
   <div class="aurora-blobs">
-    <div class="aurora-blob aurora-blob-1"></div>
-    <div class="aurora-blob aurora-blob-2"></div>
     <div class="aurora-blob aurora-blob-3"></div>
     <div class="aurora-blob aurora-blob-4"></div>
   </div>
@@ -1430,7 +1441,7 @@ footer {
 
 <!-- HERO SECTION -->
 <section class="hero">
-  <div class="hero-badge">Trusted by 1,000+ Students 🚀</div>
+  <div class="hero-badge"><span class="hero-badge-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z" fill="var(--primary)"/></svg></span>Trusted by 500+ Students</div>
   <h1>Your Smart<br><span class="grad">Study Guide Hub</span></h1>
   <p class="hero-sub">
     Free preparation guides, syllabus breakdowns and study strategies for JEE, NEET &amp; CUET 2027. Access mock tests, AI tools and focus timer on the platform.
@@ -1444,7 +1455,7 @@ footer {
 <!-- STATS -->
 <div class="stats-bar reveal">
   <div class="stat-item">
-    <div class="stat-value" data-target="1000" data-prefix="1K">1K+</div>
+    <div class="stat-value" data-target="500" data-suffix="+">500+</div>
     <div class="stat-label">Active Students</div>
   </div>
   <div class="stat-divider"></div>
@@ -1492,7 +1503,7 @@ footer {
 
     <a href="/jee-preparation-2027.html" class="guide-card gc-jee reveal">
       <div class="guide-icon gi-jee" style="display:flex;align-items:center;justify-content:center;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#4F46E5" stroke-width="1.8" stroke-dasharray="2 2"/><circle cx="12" cy="12" r="4" fill="rgba(79,70,229,0.15)" stroke="#4F46E5" stroke-width="1.8"/><circle cx="12" cy="12" r="1.5" fill="#4F46E5"/></svg>
+        <img src="/assets/jee.png" alt="JEE" style="width:28px;height:28px;object-fit:contain;" onerror="this.style.display='none'">
       </div>
       <div class="guide-title">JEE Preparation 2027</div>
       <div class="guide-desc">Complete JEE Main 2027 preparation guide — syllabus, chapter weightage, mock test strategy, Physics Chemistry Maths tips and study schedule.</div>
@@ -1501,7 +1512,7 @@ footer {
 
     <a href="/neet-preparation-guide.html" class="guide-card gc-neet reveal" style="transition-delay:0.08s">
       <div class="guide-icon gi-neet" style="display:flex;align-items:center;justify-content:center;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <img src="/assets/jee.png" alt="NEET" style="width:28px;height:28px;object-fit:contain;" onerror="this.style.display='none'">
       </div>
       <div class="guide-title">NEET Preparation Guide</div>
       <div class="guide-desc">NEET UG 2027 complete guide — Biology, Physics, Chemistry syllabus, NCERT strategy, previous year trends and scoring tips for 700+ marks.</div>
@@ -1510,7 +1521,7 @@ footer {
 
     <a href="/cuet-preparation-guide.html" class="guide-card gc-cuet reveal" style="transition-delay:0.16s">
       <div class="guide-icon gi-cuet" style="display:flex;align-items:center;justify-content:center;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="13" height="18" rx="2.5" fill="rgba(234,88,12,0.12)" stroke="#EA580C" stroke-width="1.8"/><line x1="8.5" y1="8" x2="15.5" y2="8" stroke="#EA580C" stroke-width="1.5" stroke-linecap="round"/><line x1="8.5" y1="12" x2="15.5" y2="12" stroke="#EA580C" stroke-width="1.5" stroke-linecap="round"/><line x1="8.5" y1="16" x2="12" y2="16" stroke="#EA580C" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <img src="/assets/cuet.png" alt="CUET" style="width:28px;height:28px;object-fit:contain;" onerror="this.style.display='none'">
       </div>
       <div class="guide-title">CUET Preparation Guide</div>
       <div class="guide-desc">CUET UG 2027 strategy guide — domain subject selection, NTA pattern breakdown, General Test tips, language section and mock test practice plan.</div>
@@ -1631,7 +1642,7 @@ footer {
       </li>
     </ul>
     <div style="text-align: center;">
-      <a href="https://studygridprep.online/" target="_blank" rel="noopener" class="btn-access">Access All Tools — It's Free →</a>
+      <a href="https://studygridprep.online/" target="_blank" rel="noopener" class="btn-access">Access Core Features — Free →</a>
       <p style="font-size:13px;color:var(--text-muted);margin-top:12px;">No credit card needed · Sign up with Google in 10 seconds</p>
     </div>
   </div>
