@@ -1,0 +1,16 @@
+# Study Grid Prep — Cloudflare Pages routing for CMS content
+# Add these lines to your existing _redirects file (create one at the
+# site root if you don't have it). Each content type gets its own path
+# prefix, matching urlPattern in firestore-schema.md. All of them serve
+# the same content-render.html — it reads the slug from the URL path.
+
+/blog/*            /content-render.html   200
+/notes/*           /content-render.html   200
+/formula-sheet/*   /content-render.html   200
+/pyq/*             /content-render.html   200
+/mock/*            /content-render.html   200
+/news/*            /content-render.html   200
+/exam-update/*     /content-render.html   200
+/college/*         /content-render.html   200
+/career/*          /content-render.html   200
+/guide/*           /content-render.html   200
